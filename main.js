@@ -21,11 +21,17 @@
   /* ---- mobile nav ---- */
   var toggle = doc.querySelector('.nav-toggle');
   var backdrop = doc.querySelector('.nav-backdrop');
-  function closeMenu() { body.classList.remove('menu-open'); if (toggle) toggle.setAttribute('aria-expanded', 'false'); }
+  function setMenu(open) {
+    body.classList.toggle('menu-open', open);
+    if (toggle) toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // lock page scroll while the drawer is open so the page cannot scroll behind it
+    doc.documentElement.style.overflow = open ? 'hidden' : '';
+    body.style.overflow = open ? 'hidden' : '';
+  }
+  function closeMenu() { setMenu(false); }
   if (toggle) {
     toggle.addEventListener('click', function () {
-      var open = body.classList.toggle('menu-open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      setMenu(!body.classList.contains('menu-open'));
     });
   }
   if (backdrop) backdrop.addEventListener('click', closeMenu);

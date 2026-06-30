@@ -413,10 +413,15 @@ p{margin:0 0 1.1em}
   .nav{
     position:fixed;inset:0 0 0 auto;width:min(86vw,400px);
     flex-direction:column;align-items:flex-start;justify-content:center;gap:8px;
-    background:var(--pine-deep);padding:90px var(--gutter) 40px;
+    background:var(--pine-deep);padding:96px var(--gutter) 40px;
     transform:translateX(100%);transition:transform .5s var(--ease);box-shadow:var(--shadow-lg);
+    overflow-y:auto;-webkit-overflow-scrolling:touch;z-index:1;
   }
   .menu-open .nav{transform:none}
+  /* while the drawer is open, let the fixed header blend into the dark overlay */
+  .menu-open .site-header{background:transparent;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom-color:transparent}
+  .menu-open .brand__name{color:var(--cream)}
+  .menu-open .brand__sub{color:var(--brass)}
   .nav a{color:var(--on-dark);font-size:1.35rem;font-family:var(--serif);font-weight:500;letter-spacing:0;padding:.45em 0;width:100%;border-bottom:1px solid rgba(243,237,225,.1)}
   .nav a::after{display:none}
   .nav a[aria-current="page"]{color:var(--brass)}
