@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Book a Trip | Constant Quest Outfitters</title>
+<meta name="description" content="Get in touch with Constant Quest Outfitters in Cody, Wyoming to plan a guided elk hunt, fly fishing trip, or summer horseback pack trip in the Thorofare wilderness.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,560;9..144,600;9..144,700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23243528'/%3E%3Ctext x='16' y='21' font-family='Georgia,serif' font-size='14' font-weight='600' fill='%23c39a52' text-anchor='middle'%3ECQ%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+  <a class="brand" href="index.html">
+    <span class="brand__name">Constant Quest</span>
+    <span class="brand__sub">Outfitters &middot; Cody, Wyoming</span>
+  </a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <nav class="nav" aria-label="Primary">
+    <a href="hunting.html">Hunting</a>
+    <a href="fishing.html">Fishing</a>
+    <a href="pack-trips.html">Pack Trips</a>
+    <a href="ranch.html">The Ranch</a>
+    <a href="about.html">About</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQ</a>
+    <a class="btn btn--on-dark" href="contact.html" aria-current="page">Book a Trip</a>
+  </nav>
+</header>
+<div class="nav-backdrop"></div>
+
+<!-- ============================ SUBHERO ============================ -->
+<section class="subhero">
+  <div class="subhero__media">
+    <img src="assets/winter-wonderland-1.jpg" alt="A snow covered mountain valley framed by bare branches">
+  </div>
+  <div class="subhero__inner wrap">
+    <p class="crumb"><a href="index.html">Home</a> &middot; <span>Book a Trip</span></p>
+    <h1>Let's plan your trip.</h1>
+    <p class="lead">Whether it is a hunt, a float, or a pack trip into the high country, reach out and we will help you sort dates, licenses, and the trip that fits.</p>
+  </div>
+</section>
+
+<!-- ============================ CONTACT + FORM ============================ -->
+<section class="section bg-cream">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- LEFT: details + how booking works -->
+      <div class="reveal">
+        <p class="eyebrow">Get in touch</p>
+        <h2 class="h-md">Talk to the outfit</h2>
+        <p class="lead" style="margin-top:1rem">The best way to start is a phone call with Nick. Tell us what you have in mind and roughly when, and we will walk you through what is open and what it costs.</p>
+
+        <div class="contact-block">
+          <span class="ic">&#9742;</span>
+          <div>
+            <div class="k">Phone</div>
+            <div class="v"><a href="tel:19145575754">(914) 557-5754</a></div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <span class="ic">&#9993;</span>
+          <div>
+            <div class="k">Email</div>
+            <div class="v"><a href="mailto:ntrizano@constantquest.com">ntrizano@constantquest.com</a></div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <span class="ic">&#9873;</span>
+          <div>
+            <div class="k">Address</div>
+            <div class="v">598 Hunter Creek Rd<br>Cody, WY 82414</div>
+          </div>
+        </div>
+        <div class="contact-block">
+          <span class="ic">&#9728;</span>
+          <div>
+            <div class="k">Seasons</div>
+            <div class="v">Hunts Sept to Oct &middot; Fishing weekly in August &middot; Pack trips in summer</div>
+          </div>
+        </div>
+
+        <h3 class="h-sm" style="margin-top:2.6rem">How booking works</h3>
+        <ul class="ticks">
+          <li>Call Nick to check availability for the dates you want.</li>
+          <li>Complete the deposit agreement we send over.</li>
+          <li>Submit the deposit to lock your dates: $1,500 per hunter, $1,000 per angler, $500 per pack guest.</li>
+          <li>Reservations are first come, first served, and most hunts book well in advance.</li>
+        </ul>
+      </div>
+
+      <!-- RIGHT: inquiry form (concept) -->
+      <div class="reveal" data-d="1">
+        <p class="eyebrow">Send an inquiry</p>
+        <h2 class="h-md">Tell us what you are after</h2>
+        <p class="lead" style="margin-top:1rem;margin-bottom:1.8rem">Share a few details and we will get back to you to talk dates and rates.</p>
+
+        <form>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="interest">Interest</label>
+              <select id="interest" name="interest">
+                <option>Hunting Trips</option>
+                <option>Fishing Trips</option>
+                <option>Summer Pack Trips</option>
+                <option>Custom Trip</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="date">Approximate Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+          <div class="field">
+            <label for="message">Questions or Comments</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="button" class="btn btn--primary btn--lg">Send Inquiry</button>
+          <p class="note" style="margin-top:1.4rem">This is a concept form for layout only and does not send.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MAP ============================ -->
+<section class="section bg-bone">
+  <div class="wrap">
+    <div class="shead shead--center reveal">
+      <p class="eyebrow center">Find us</p>
+      <h2 class="h-lg maxch-c">The WYO Wild Horse Ranch, 50 miles west of Cody</h2>
+      <p class="lead maxch-c">Our basecamp sits at the end of the road on the South Fork of the Shoshone. The closest airport is Yellowstone Regional in Cody, about 50 miles from the lodge.</p>
+    </div>
+    <div class="map-embed reveal" data-d="1">
+      <iframe loading="lazy" src="https://maps.google.com/maps?q=598%20Hunter%20Creek%20Rd%2C%20Cody%2C%20WY%2082414&z=11&output=embed"></iframe>
+    </div>
+    <p style="margin-top:1.6rem" class="center reveal" data-d="2">
+      <a class="btn btn--ghost" href="https://www.google.com/maps?cid=10138437965714312475" target="_blank" rel="noopener">Get directions</a>
+    </p>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND ============================ -->
+<section class="cta-band">
+  <div class="cta-band__media"><img src="assets/img_0094.jpg" alt="Panoramic view over a broad forested valley with a river below and snow capped peaks beyond, in the Thorofare country of Wyoming"></div>
+  <div class="cta-band__inner wrap">
+    <p class="eyebrow center">Plan your season</p>
+    <h2>Pick up the phone and we will sort the rest.</h2>
+    <p class="lead">Ask about open dates and current rates. We will help you line up the trip, the licenses, and the timing.</p>
+    <div class="cta-band__btns">
+      <a class="btn btn--primary btn--lg" href="tel:19145575754">Call (914) 557-5754</a>
+      <a class="btn btn--light btn--lg" href="mailto:ntrizano@constantquest.com">Email the Outfit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand__name">Constant Quest Outfitters</span>
+        <p>Guided wilderness elk hunts, fly fishing, and horseback pack trips in the Thorofare country of northwest Wyoming.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Trips</h4>
+        <ul>
+          <li><a href="hunting.html">Elk Hunting</a></li>
+          <li><a href="fishing.html">Fly Fishing</a></li>
+          <li><a href="pack-trips.html">Summer Pack Trips</a></li>
+          <li><a href="ranch.html">WYO Wild Horse Ranch</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Outfit</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Book a Trip</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="tel:19145575754">(914) 557-5754</a></li>
+          <li><a href="mailto:ntrizano@constantquest.com">ntrizano@constantquest.com</a></li>
+          <li>598 Hunter Creek Rd<br>Cody, WY 82414</li>
+        </ul>
+        <div class="footer-social" style="margin-top:1.2rem">
+          <a href="https://www.instagram.com/constant_quest_outfitters/" aria-label="Instagram" target="_blank" rel="noopener">IG</a>
+          <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener">FB</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="lic">Wyoming Outfitter License #BG-173 &middot; Permittee, Shoshone &amp; Bridger-Teton NF &middot; Equal Opportunity Provider</span>
+      <span class="lic">&copy; <span id="year">2026</span> Constant Quest Outfitters</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ DEMO BADGE ============================ -->
+<div class="demo-badge">
+  <span class="dot"></span>
+  <div>Concept site built for Constant Quest Outfitters by <strong>Aoraki Creations</strong>. Not affiliated or live.</div>
+  <button class="demo-badge__x" aria-label="Dismiss">&times;</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
